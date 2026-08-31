@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پارس کالا - پارس مدیا</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        body { background-color: #fcfbfa; color: #222; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; background-color: #fff; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+        .logo-area { display: flex; align-items: center; gap: 10px; font-size: 22px; font-weight: bold; color: #1a382b; }
+        .logo-icon { background-color: #1a382b; color: #fff; padding: 5px 12px; border-radius: 8px; }
+        .search-box { flex: 0 0 40%; }
+        .search-box input { width: 100%; padding: 10px 15px; border: 1px solid #ddd; border-radius: 8px; outline: none; background-color: #f9f9f9; }
+        .header-actions { display: flex; align-items: center; gap: 20px; }
+        .dropdown { cursor: pointer; font-size: 14px; color: #555; }
+        .hero { display: flex; align-items: center; justify-content: space-between; padding: 50px 40px; max-width: 1200px; margin: 0 auto; }
+        .hero-text { flex: 1; padding-left: 40px; }
+        .badge { color: #c85a32; font-size: 14px; font-weight: bold; margin-bottom: 15px; display: inline-block; }
+        .hero-text h1 { font-size: 48px; color: #1a382b; line-height: 1.2; margin-bottom: 20px; }
+        .hero-text p { font-size: 16px; color: #666; line-height: 1.6; }
+        .hero-image { flex: 1; position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+        .hero-image img { width: 100%; display: block; }
+        .image-overlay-text { position: absolute; bottom: 30px; right: 30px; color: white; text-align: right; text-shadow: 0 2px 4px rgba(0,0,0,0.7); }
+        .image-overlay-text span { font-size: 13px; opacity: 0.9; display: block; margin-bottom: 5px; }
+        .image-overlay-text h3 { font-size: 24px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <span class="logo-icon">پ</span>
+            <span>پارس کالا</span>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="دنبال چه کالایی هستید؟">
+        </div>
+        <div class="header-actions">
+            <div class="dropdown">FA ▾</div>
+            <div class="dropdown">TOMAN ▾</div>
+            <div style="cursor: pointer;">🛒 سبد خرید</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <span class="badge">✦ انتخاب این هفته</span>
+            <h1>کالاهای خاص، بدون مرز</h1>
+            <p>لوازم خودرو، محصولات دیجیتال و انتخاب‌های روزمره را از فروشگاه‌های معتبر ایران و ترکیه یکجا پیدا کنید.</p>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="پارس کالا">
+            <div class="image-overlay-text">
+                <span>انتخاب رانندگان</span>
+                <h3>کیت مراقبت خودرو</h3>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
