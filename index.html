@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پارس کالا - فروشگاه آنلاین پارس مدیا</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        body { background-color: #f8f9fa; color: #333; }
+        
+        header { display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; background-color: #fff; border-bottom: 1px solid #eaeaea; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
+        .logo-area { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+        .logo-img { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; border: 2px solid #1a382b; }
+        .logo-text { display: flex; flex-direction: column; }
+        .logo-title { font-size: 20px; font-weight: bold; color: #1a382b; }
+        .logo-subtitle { font-size: 11px; color: #777; letter-spacing: 0.5px; }
+
+        .nav-links { display: flex; gap: 25px; font-size: 15px; align-items: center; }
+        .nav-links a { color: #555; text-decoration: none; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: #1a382b; }
+
+        .hero { text-align: center; padding: 80px 20px; background: linear-gradient(135deg, #1a382b 0%, #2e5a44 100%); color: #fff; margin-bottom: 50px; border-radius: 0 0 30px 30px; box-shadow: 0 10px 30px rgba(26,56,43,0.15); }
+        .hero h1 { font-size: 42px; margin-bottom: 15px; font-weight: 800; }
+        .hero p { font-size: 18px; opacity: 0.9; max-width: 650px; margin: 0 auto; line-height: 1.7; font-weight: 300; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px 60px 20px; }
+        .section-title { font-size: 26px; color: #1a382b; margin-bottom: 30px; border-right: 5px solid #c85a32; padding-right: 15px; font-weight: 700; }
+
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .product-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.04); transition: all 0.3s ease; border: 1px solid #eaeaea; display: flex; flex-direction: column; justify-content: space-between; }
+        .product-card:hover { transform: translateY(-7px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); }
+        .product-img { height: 200px; background-color: #f1f3f5; display: flex; align-items: center; justify-content: center; color: #888; font-size: 15px; font-weight: 500; }
+        .product-info { padding: 25px; }
+        .product-title { font-size: 19px; color: #1a382b; margin-bottom: 12px; font-weight: bold; }
+        .product-desc { font-size: 14px; color: #666; margin-bottom: 15px; line-height: 1.6; }
+        .product-footer { display: flex; justify-content: space-between; align-items: center; padding: 18px 25px; background: #fafbfc; border-top: 1px solid #eaeaea; }
+        .product-price { font-size: 15px; font-weight: bold; color: #c85a32; }
+        .buy-btn { background-color: #1a382b; color: #fff; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 500; transition: background-color 0.2s; }
+        .buy-btn:hover { background-color: #2e5a44; }
+
+        footer { text-align: center; padding: 40px; color: #888; font-size: 14px; border-top: 1px solid #eaeaea; margin-top: 60px; background: #fff; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo-area">
+            <!-- تصویر لوگوی شما که با نام logo.png در کنار فایل‌ها آپلود می‌شود -->
+            <img src="logo.png" alt="پارس مدیا" class="logo-img">
+            <div class="logo-text">
+                <span class="logo-title">پارس کالا</span>
+                <span class="logo-subtitle">پارس مدیا (Strategic Digital Partners)</span>
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" style="font-weight: bold; color: #1a382b;">صفحه اصلی</a>
+            <a href="about.html">درباره ما</a>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>فروشگاه اینترنتی پارس کالا</h1>
+        <p>مرجع تخصصی تامین گجت‌های مدرن، تجهیزات سفرهای جاده‌ای و لوازم جانبی کاربردی با استانداردهای پارس مدیا</p>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">محصولات برگزیده و پیشنهادی</h2>
+        
+        <div class="products-grid">
+            <!-- محصول اول -->
+            <div class="product-card">
+                <div>
+                    <div class="product-img">تصویر تجهیزات ارتباطی</div>
+                    <div class="product-info">
+                        <div class="product-title">مودم و سیستم وای‌فای همراه سفری</div>
+                        <div class="product-desc">تجربه اینترنت پرسرعت و پایدار در تمام مسیرهای جاده‌ای و سفرهای بین‌شهری بدون قطعی.</div>
+                    </div>
+                </div>
+                <div class="product-footer">
+                    <span class="product-price">پیشنهاد ویژه سفر</span>
+                    <button class="buy-btn">اطلاعات بیشتر</button>
+                </div>
+            </div>
+
+            <!-- محصول دوم -->
+            <div class="product-card">
+                <div>
+                    <div class="product-img">تصویر پایه و هولدر</div>
+                    <div class="product-info">
+                        <div class="product-title">هولدر و استند چندکاره تبلت و گوشی</div>
+                        <div class="product-desc">طراحی ارگونومیک و بسیار مقاوم، مناسب برای نصب پایدار تجهیزات دیجیتال در کابین.</div>
+                    </div>
+                </div>
+                <div class="product-footer">
+                    <span class="product-price">بسیار کاربردی</span>
+                    <button class="buy-btn">اطلاعات بیشتر</button>
+                </div>
+            </div>
+
+            <!-- محصول سوم -->
+            <div class="product-card">
+                <div>
+                    <div class="product-img">تصویر سازمان‌دهنده</div>
+                    <div class="product-info">
+                        <div class="product-title">باکس نظم‌دهنده تجهیزات سفر</div>
+                        <div class="product-desc">محصولی ایده‌آل برای تفکیک، نظم‌بخشیدن و دسترسی سریع به اقلام و وسایل ضروری در سفر.</div>
+                    </div>
+                </div>
+                <div class="product-footer">
+                    <span class="product-price">نظم و راحتی</span>
+                    <button class="buy-btn">اطلاعات بیشتر</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        تمامی حقوق محفوظ است © 2026 - هلدینگ رسانه‌ای پارس مدیا / پارس کالا
+    </footer>
+
+</body>
+</html>
